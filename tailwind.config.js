@@ -37,7 +37,7 @@ export default {
             },
             fontFamily: {
                 sans: ['Philosopher', 'system-ui', 'sans-serif'],
-                display: ['Philosopher', 'system-ui', 'sans-serif'],
+                display: ['Roboto', 'sans-serif'],
                 mono: ['Philosopher', 'monospace'],
             },
             fontSize: {
