@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+		overflow-x: hidden;
+	}
+
+	body {
+		@apply font-sans text-gray-900 antialiased;
+		overflow-x: hidden;
+		margin: 0;
+		padding: 0;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-display;
+	}
+}
+
+@layer components {
+	.btn-primary {
+		@apply bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-lg 
+           transition-all duration-300 hover:-translate-y-1 hover:shadow-strong inline-flex 
+           items-center gap-2 text-lg;
+	}
+
+	.btn-secondary {
+		@apply bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white 
+           font-semibold px-8 py-4 rounded-lg transition-all duration-300 inline-flex items-center 
+           gap-2 text-lg;
+	}
+
+	.btn-gradient {
+		@apply bg-gradient-to-r from-primary to-primary-light text-white font-semibold px-8 py-4 
+           rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-strong 
+           inline-flex items-center gap-2 text-lg;
+	}
+
+	.card {
+		@apply bg-white rounded-xl p-8 shadow-soft hover:shadow-medium transition-all duration-300;
+	}
+
+	.section-padding {
+		@apply py-16 md:py-24 lg:py-32;
+	}
+
+	.container-custom {
+		@apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.eyebrow {
+		@apply text-sm md:text-base font-bold tracking-wider uppercase text-secondary mb-4;
+	}
+
+	.gradient-text {
+		@apply bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent;
+	}
+
+	.stat-number {
+		@apply font-mono text-4xl md:text-5xl lg:text-6xl font-bold gradient-text;
+	}
+}
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
