@@ -8,21 +8,21 @@ const Solution = () => {
             description: 'When Saife AI detects violent, sexualized, or abusive content, the video is automatically skipped to the next safe post. You never see it. You never have to report it. Protection happens before exposure.',
             icon: SkipForward,
             gradient: 'from-success to-tertiary',
-            image: 'auto-skip.jpg',
+            image: 'saife_ai1.JPG',
         },
         {
             title: 'Blur Questionable Content with Warnings',
             description: 'For borderline content, Saife AI blurs the image or video and shows a content warning. You decide if you want to view it but you\'re never caught off guard by triggering material.',
             icon: Eye,
             gradient: 'from-warning to-danger',
-            image: 'sexual-content.jpg',
+            image: 'saife_ai2.JPG',
         },
         {
             title: 'Filter Toxic Comments & Harassment in Real-Time',
             description: 'Saife AI detects and hides misogynistic, abusive, or harassing comments as they appear. No more scrolling through hate. No more psychological toll from anonymous bullying.',
             icon: Ban,
             gradient: 'from-primary to-primary-light',
-            image: 'braless-woman.jpg',
+            image: 'saife_ai3.jpg',
         },
     ];
 
