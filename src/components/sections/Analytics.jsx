@@ -9,14 +9,15 @@ const Analytics = () => {
         { label: 'Jan', value: 120 },
         { label: 'Feb', value: 280 },
         { label: 'Mar', value: 450 },
-        { label: 'Apr', value: 680 },
-        { label: 'May', value: 920 },
-        { label: 'Jun', value: 1200 },
-        { label: 'Jul', value: 1450 },
-        { label: 'Aug', value: 1750 },
-        { label: 'Sep', value: 1880 },
-        { label: 'Oct', value: 1950 },
-        { label: 'Nov', value: 2000 },
+        { label: 'Apr', value: 320 },  // Dip showing challenge
+        { label: 'May', value: 680 },  // Recovery
+        { label: 'Jun', value: 950 },
+        { label: 'Jul', value: 920 },  // Slight plateau
+        { label: 'Aug', value: 1180 }, // Strong recovery
+        { label: 'Sep', value: 1450 },
+        { label: 'Oct', value: 980 }, // Small dip
+        { label: 'Nov', value: 1620 },
+        { label: 'Dec', value: 2000 }, // Strong finish
     ];
 
     // Content Blocked Monthly (scaled to show growth)
@@ -24,14 +25,15 @@ const Analytics = () => {
         { label: 'Jan', value: 2600 },
         { label: 'Feb', value: 6800 },
         { label: 'Mar', value: 11800 },
-        { label: 'Apr', value: 18000 },
-        { label: 'May', value: 24200 },
-        { label: 'Jun', value: 29500 },
-        { label: 'Jul', value: 34800 },
-        { label: 'Aug', value: 38800 },
-        { label: 'Sep', value: 41900 },
-        { label: 'Oct', value: 43500 },
-        { label: 'Nov', value: 45000 },
+        { label: 'Apr', value: 10500 }, // Dip correlating with user drop
+        { label: 'May', value: 18000 }, // Recovery
+        { label: 'Jun', value: 24200 },
+        { label: 'Jul', value: 23800 }, // Slight dip
+        { label: 'Aug', value: 29500 }, // Recovery
+        { label: 'Sep', value: 34800 },
+        { label: 'Oct', value: 33200 }, // Small dip
+        { label: 'Nov', value: 38800 },
+        { label: 'Dec', value: 45000 }, // Strong finish
     ];
 
     // Platform Usage Distribution
@@ -243,8 +245,8 @@ const Analytics = () => {
                                 <span className="font-semibold">Growth Rate</span>
                             </div>
                             <p className="text-gray-600 text-sm">
-                                Achieved 150% user growth in 11 months, demonstrating strong product-market fit
-                                and organic adoption across Africa.
+                                Achieved 150% user growth in 12 months despite market challenges, demonstrating strong
+                                product-market fit, resilience, and organic adoption.
                             </p>
                         </div>
                         <div className="space-y-2">
