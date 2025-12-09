@@ -59,7 +59,14 @@ const Header = () => {
                         <Button variant="secondary" icon="arrow" href="#support" className="h-6 px-4 text-sm    "    >
                             Support Us
                         </Button>
-                        <Button variant="primary" icon="download" className="h-6 px-4 text-sm">
+                        <Button 
+                            variant="primary" 
+                            icon="download" 
+                            className="h-6 px-4 text-sm"
+                            href="https://drive.google.com/file/d/1EK9aWxXKVvLj2d1oyOTY637YjApuhZ34/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Download Now
                         </Button>
                     </div> */}
@@ -93,7 +100,14 @@ const Header = () => {
                             ))}
                         </nav>
                         {/* <div className="flex flex-col gap-3">
-                            <Button variant="primary" icon="download" className="w-full h-4 justify-center">
+                            <Button 
+                                variant="primary" 
+                                icon="download" 
+                                className="w-full h-4 justify-center"
+                                href="https://drive.google.com/file/d/1EK9aWxXKVvLj2d1oyOTY637YjApuhZ34/view?usp=sharing"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 Download Now
                             </Button>
                             <Button variant="secondary" icon="arrow" className="w-full h-4 justify-center">

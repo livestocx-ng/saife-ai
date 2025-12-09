@@ -42,7 +42,14 @@ const Hero = () => {
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                            <Button variant="primary" icon="download" className="justify-center">
+                            <Button
+                                variant="primary"
+                                icon="download"
+                                className="justify-center"
+                                href="https://drive.google.com/file/d/1EK9aWxXKVvLj2d1oyOTY637YjApuhZ34/view?usp=sharing"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 Download Now
                             </Button>
                             <Button variant="secondary" icon="arrow" className="justify-center">

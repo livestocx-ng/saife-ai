@@ -10,7 +10,7 @@ const Footer = () => {
       { label: 'Press Kit', href: '#press' },
     ],
     users: [
-      { label: 'Download App', href: '#download' },
+      { label: 'Download App', href: 'https://drive.google.com/file/d/1EK9aWxXKVvLj2d1oyOTY637YjApuhZ34/view?usp=sharing', target: '_blank', rel: 'noopener noreferrer' },
       { label: 'Browser Extension', href: '#extension' },
       { label: 'Help Center', href: '#help' },
       { label: 'Privacy & Security', href: '#privacy' },
@@ -81,7 +81,9 @@ const Footer = () => {
               {footerLinks.users.map((link) => (
                 <li key={link.label}>
                   <a 
-                    href={link.href} 
+                    href={link.href}
+                    target={link.target}
+                    rel={link.rel}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     {link.label}
