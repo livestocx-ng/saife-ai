@@ -1,10 +1,12 @@
 import Button from '../ui/Button';
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Shield } from 'lucide-react';
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -16,10 +18,11 @@ const Header = () => {
     }, []);
 
     const navItems = [
-        { label: 'How It Works', href: '#how-it-works' },
-        { label: 'Impact', href: '#impact' },
-        { label: 'Roadmap', href: '#roadmap' },
-        { label: 'For Partners', href: '#partners' },
+        { label: 'How It Works', href: '/#how-it-works', isRoute: false },
+        { label: 'Impact', href: '/#impact', isRoute: false },
+        { label: 'Analytics', href: '/analytics', isRoute: true },
+        { label: 'Roadmap', href: '/#roadmap', isRoute: false },
+        { label: 'For Partners', href: '/#partners', isRoute: false },
     ];
 
     return (
@@ -32,25 +35,35 @@ const Header = () => {
             <div className="container-custom">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
-                    <a href="#" className="flex items-center gap-2 group">
+                    <Link to="/" className="flex items-center gap-2 group">
                         <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                             <Shield className="w-4 h-4 md:w-6 md:h-6 text-white" />
                         </div>
                         <span className="text-xl md:text-2xl font-display font-bold text-gray-900">
                             Saife <span className="gradient-text">AI</span>
                         </span>
-                    </a>
+                    </Link>
 
                     {/* Desktop Navigation */}
                     <nav className="hidden lg:flex items-center gap-8">
                         {navItems.map((item) => (
-                            <a
-                                key={item.label}
-                                href={item.href}
-                                className="text-gray-700 hover:text-primary font-medium transition-colors"
-                            >
-                                {item.label}
-                            </a>
+                            item.isRoute ? (
+                                <Link
+                                    key={item.label}
+                                    to={item.href}
+                                    className="text-gray-700 hover:text-primary font-medium transition-colors"
+                                >
+                                    {item.label}
+                                </Link>
+                            ) : (
+                                <a
+                                    key={item.label}
+                                    href={item.href}
+                                    className="text-gray-700 hover:text-primary font-medium transition-colors"
+                                >
+                                    {item.label}
+                                </a>
+                            )
                         ))}
                     </nav>
 
@@ -89,14 +102,25 @@ const Header = () => {
                     <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-strong mt-2 py-6 px-4 rounded-lg mx-4 animate-fade-in">
                         <nav className="flex flex-col gap-4 mb-6">
                             {navItems.map((item) => (
-                                <a
-                                    key={item.label}
-                                    href={item.href}
-                                    onClick={() => setIsMobileMenuOpen(false)}
-                                    className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
-                                >
-                                    {item.label}
-                                </a>
+                                item.isRoute ? (
+                                    <Link
+                                        key={item.label}
+                                        to={item.href}
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                        className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
+                                    >
+                                        {item.label}
+                                    </Link>
+                                ) : (
+                                    <a
+                                        key={item.label}
+                                        href={item.href}
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                        className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
+                                    >
+                                        {item.label}
+                                    </a>
+                                )
                             ))}
                         </nav>
                         {/* <div className="flex flex-col gap-3">

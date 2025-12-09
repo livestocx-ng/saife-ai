@@ -38,10 +38,10 @@ const Footer = () => {
               </span>
             </a>
             <p className="text-gray-400 mb-6 max-w-md">
-              Protecting women and girls from digital violence through real-time 
+              Protecting women and girls from digital violence through real-time
               AI-powered content filtering. Building a safer internet for everyone.
             </p>
-            <div className="flex items-center gap-4">
+            {/* <div className="flex items-center gap-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
@@ -54,7 +54,7 @@ const Footer = () => {
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* About Column */}
@@ -63,8 +63,8 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.about.map((link) => (
                 <li key={link.label}>
-                  <a 
-                    href={link.href} 
+                  <a
+                    href={link.href}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     {link.label}
@@ -80,7 +80,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.users.map((link) => (
                 <li key={link.label}>
-                  <a 
+                  <a
                     href={link.href}
                     target={link.target}
                     rel={link.rel}
@@ -99,8 +99,8 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.institutions.map((link) => (
                 <li key={link.label}>
-                  <a 
-                    href={link.href} 
+                  <a
+                    href={link.href}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     {link.label}

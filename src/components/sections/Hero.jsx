@@ -18,7 +18,7 @@ const Hero = () => {
                         <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
                             <Shield className="w-4 h-4 text-primary" />
                             <span className="text-sm font-semibold text-primary">
-                                Trusted by 6,000+ Users
+                                Trusted by 2,000+ Users
                             </span>
                         </div>
 
