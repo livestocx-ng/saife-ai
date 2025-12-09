@@ -42,10 +42,10 @@ const Hero = () => {
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                            <Button variant="primary" icon="download">
+                            <Button variant="primary" icon="download" className="justify-center">
                                 Download Now
                             </Button>
-                            <Button variant="secondary" icon="arrow">
+                            <Button variant="secondary" icon="arrow" className="justify-center">
                                 Support Our Scale
                             </Button>
                         </div>
@@ -80,48 +80,24 @@ const Hero = () => {
                     <div className="relative animate-fade-in">
                         <div className="relative z-10">
                             {/* Phone Mockup */}
-                            <div className="relative mx-auto w-full max-w-sm">
+                            <div className="relative mx-auto w-full max-w-[300px]">
+                                {/* Phone Frame with Background Image */}
                                 {/* Phone Frame */}
                                 <div className="relative bg-gray-900 rounded-[3rem] p-3 shadow-strong">
-                                    <div className="bg-white rounded-[2.5rem] overflow-hidden">
-                                        {/* Status Bar */}
-                                        <div className="bg-gray-900 h-8 flex items-center justify-center">
-                                            <div className="w-24 h-4 bg-gray-800 rounded-full" />
-                                        </div>
+                                    {/* Phone Notch */}
+                                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-gray-900 rounded-b-3xl z-10"></div>
 
-                                        {/* Screen Content */}
-                                        <div className="relative aspect-[9/16] bg-gradient-to-br from-gray-100 to-gray-200">
-                                            {/* Simulated Social Feed */}
-                                            <div className="absolute inset-0 flex items-center justify-center p-6">
-                                                <div className="text-center space-y-4">
-                                                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-success to-tertiary rounded-full flex items-center justify-center animate-pulse">
-                                                        <Shield className="w-10 h-10 text-white" />
-                                                    </div>
-                                                    <div className="space-y-2">
-                                                        <div className="text-sm font-bold text-success">Content Filtered</div>
-                                                        <div className="text-xs text-gray-600">Harmful content auto-skipped</div>
-                                                    </div>
-                                                    <div className="bg-white rounded-lg p-4 shadow-medium">
-                                                        <div className="text-xs text-gray-500 mb-2">Protected Features:</div>
-                                                        <div className="space-y-2 text-left text-xs">
-                                                            <div className="flex items-center gap-2">
-                                                                <CheckCircle className="w-3 h-3 text-success" />
-                                                                <span>Auto-skip harmful videos</span>
-                                                            </div>
-                                                            <div className="flex items-center gap-2">
-                                                                <CheckCircle className="w-3 h-3 text-success" />
-                                                                <span>Blur questionable content</span>
-                                                            </div>
-                                                            <div className="flex items-center gap-2">
-                                                                <CheckCircle className="w-3 h-3 text-success" />
-                                                                <span>Filter toxic comments</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    {/* Phone Screen */}
+                                    <div className="relative rounded-[2.5rem] overflow-hidden">
+                                        <div
+                                            className="relative w-full aspect-[3/5] bg-cover bg-center bg-no-repeat"
+                                            style={{ backgroundImage: 'url(/media/phone-mockup.jpg)' }}
+                                        >
                                         </div>
                                     </div>
+
+                                    {/* Home Indicator */}
+                                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-32 h-1 bg-gray-700 rounded-full"></div>
                                 </div>
 
                                 {/* Floating Stats */}
