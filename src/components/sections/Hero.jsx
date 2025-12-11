@@ -69,7 +69,7 @@ const Hero = () => {
                             <div className="flex items-start gap-2">
                                 <CheckCircle className="w-5 h-5 text-success mt-1 flex-shrink-0" />
                                 <div>
-                                    <div className="font-bold text-gray-900">145,000+</div>
+                                    <div className="font-bold text-gray-900">45,000+</div>
                                     <div className="text-sm text-gray-600">Videos Blocked Monthly</div>
                                 </div>
                             </div>
@@ -109,7 +109,7 @@ const Hero = () => {
 
                                 {/* Floating Stats */}
                                 <div className="absolute -top-4 -right-4 bg-white rounded-2xl shadow-strong p-4 animate-scale-in">
-                                    <div className="text-2xl font-bold gradient-text">145K+</div>
+                                    <div className="text-2xl font-bold gradient-text">45K+</div>
                                     <div className="text-xs text-gray-600">Monthly Blocks</div>
                                 </div>
 

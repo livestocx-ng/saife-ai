@@ -33,7 +33,7 @@ const DualCTA = () => {
                                 </h3>
 
                                 <p className="text-xl mb-8 leading-relaxed">
-                                    Download Saife AI for free and join 6,000+ women and girls
+                                    Download Saife AI for free and join 1,600+ women and girls
                                     browsing safely across social media.
                                 </p>
 
@@ -130,8 +130,8 @@ const DualCTA = () => {
                 {/* Bottom Trust Line */}
                 <div className="text-center mt-12 text-gray-600">
                     <p className="text-lg">
-                        Already protecting <span className="font-bold text-gray-900">6,000+ users</span> with{' '}
-                        <span className="font-bold text-gray-900">145,000+ content videos</span> blocked monthly.
+                        Already protecting <span className="font-bold text-gray-900">1,600+ users</span> with{' '}
+                        <span className="font-bold text-gray-900">45,000+ content videos</span> blocked monthly.
                     </p>
                 </div>
             </div>
