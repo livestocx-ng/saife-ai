@@ -22,7 +22,7 @@ const Solution = () => {
             description: 'Saife AI detects and hides misogynistic, abusive, or harassing comments as they appear. No more scrolling through hate. No more psychological toll from anonymous bullying.',
             icon: Ban,
             gradient: 'from-primary to-primary-light',
-            image: 'saife_ai3.jpg',
+            image: 'saife_ai33.jpg',
         },
     ];
 

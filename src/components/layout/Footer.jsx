@@ -10,7 +10,7 @@ const Footer = () => {
       { label: 'Press Kit', href: '#press' },
     ],
     users: [
-      { label: 'Download App', href: 'https://drive.google.com/file/d/1EK9aWxXKVvLj2d1oyOTY637YjApuhZ34/view?usp=sharing', target: '_blank', rel: 'noopener noreferrer' },
+      { label: 'Download App', href: 'https://drive.google.com/file/d/1G5p6XllSnRDJ0cZYKD9OWXYkarrGuYf3/view?usp=sharing', target: '_blank', rel: 'noopener noreferrer' },
       { label: 'Browser Extension', href: '#extension' },
       { label: 'Help Center', href: '#help' },
       { label: 'Privacy & Security', href: '#privacy' },

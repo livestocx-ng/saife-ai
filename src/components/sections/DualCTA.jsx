@@ -41,7 +41,7 @@ const DualCTA = () => {
                                     variant="secondary"
                                     icon="download"
                                     className="!bg-white !text-primary hover:!bg-gray-100 !border-0 mb-6 w-full sm:w-auto justify-center"
-                                    href="https://drive.google.com/file/d/1EK9aWxXKVvLj2d1oyOTY637YjApuhZ34/view?usp=sharing"
+                                    href="https://drive.google.com/file/d/1G5p6XllSnRDJ0cZYKD9OWXYkarrGuYf3/view?usp=sharing"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
