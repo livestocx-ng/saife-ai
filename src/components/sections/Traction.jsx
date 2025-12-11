@@ -5,8 +5,8 @@ import StatCard from '../ui/StatCard';
 
 const Traction = () => {
   const mainStats = [
-    { number: 6000, label: 'Active Protected Users', sublabel: 'And growing daily' },
-    { number: 145000, label: 'Harmful Videos Blocked Monthly', sublabel: "That's 4,800+ per day" },
+    { number: 1600, label: 'Active Protected Users', sublabel: 'And growing daily' },
+    { number: 20000, label: 'Harmful Videos Blocked Monthly', sublabel: "That's 4,800+ per day" },
     { number: 4.6, label: 'Average User Rating', sublabel: '"I finally feel safe scrolling"' },
   ];
 

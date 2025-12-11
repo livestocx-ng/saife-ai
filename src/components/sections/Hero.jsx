@@ -18,7 +18,7 @@ const Hero = () => {
                         <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
                             <Shield className="w-4 h-4 text-primary" />
                             <span className="text-sm font-semibold text-primary">
-                                Trusted by 2,000+ Users
+                                Trusted by 1600+ Users
                             </span>
                         </div>
 
@@ -31,7 +31,7 @@ const Hero = () => {
 
                         <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
                             Saife AI automatically detects, filters, and blocks harmful content
-                            on social media before you see it. Trusted by 6,000+ users across Africa.
+                            on social media before you see it. 
                         </p>
 
                         <p className="text-lg text-gray-700">
@@ -58,7 +58,7 @@ const Hero = () => {
                         </div>
 
                         {/* Stats Bar */}
-                        <div className="grid grid-cols-3 gap-6 pt-8 border-t border-gray-200">
+                        {/* <div className="grid grid-cols-3 gap-6 pt-8 border-t border-gray-200">
                             <div className="flex items-start gap-2">
                                 <CheckCircle className="w-5 h-5 text-success mt-1 flex-shrink-0" />
                                 <div>
@@ -80,7 +80,7 @@ const Hero = () => {
                                     <div className="text-sm text-gray-600">User Rating</div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Visual/Demo */}
