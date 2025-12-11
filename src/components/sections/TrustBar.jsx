@@ -1,45 +1,52 @@
 import React from 'react';
-import { Award, Users, Shield, Heart } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const TrustBar = () => {
-  const stats = [
-    { icon: Users, label: '150+ Schools Deploying' },
-    { icon: Shield, label: 'Privacy First Protection' },
-    { icon: Heart, label: 'Built for Women & Girls' },
-    { icon: Award, label: 'Featured by Safety Orgs' },
+  const images = [
+    '/media/sponsor_1.png',
+    '/media/sponsor_2.png',
+    '/media/sponsor_3.png',
+    '/media/sponsor_4.png',
+    '/media/sponsor_5.jpg',
+    '/media/sponsor_6.png',
   ];
 
   return (
-    <section className="py-12 bg-gray-50 border-y border-gray-200">
-      <div className="container-custom">
-        <div className="text-center mb-8">
-          <h3 className="text-sm font-bold tracking-wider uppercase text-gray-500">
-            Trusted By
+    <section className="py-12 bg-gray-50 border-y border-gray-200 overflow-hidden">
+      <div className="container-custom mb-8">
+        <div className="text-center">
+          <h3 className="text-sm font-bold tracking-wider uppercase text-gray500">
+            Supported By
           </h3>
         </div>
+      </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {stats.map((stat, index) => {
-            const Icon = stat.icon;
-            return (
-              <div 
-                key={index} 
-                className="flex flex-col items-center gap-3 text-center"
-              >
-                <div className="w-12 h-12 bg-white rounded-lg shadow-soft flex items-center justify-center">
-                  <Icon className="w-6 h-6 text-secondary" />
-                </div>
-                <span className="text-sm font-semibold text-gray-700">
-                  {stat.label}
-                </span>
-              </div>
-            );
-          })}
-        </div>
+      <div className="flex w-full">
+        <motion.div 
+          className="flex items-center gap-12 md:gap-20 pr-12 md:pr-20"
+          animate={{ x: "-50%" }}
+          transition={{ 
+            repeat: Infinity, 
+            ease: "linear", 
+            duration: 20 
+          }}
+          initial={{ x: 0 }}
+          style={{ width: "fit-content" }}
+        >
+          {/* Repeat images 4 times to ensure smooth infinite scroll on wide screens */}
+          {[...images, ...images, ...images, ...images].map((img, index) => (
+             <div key={index} className="relative h-12 md:h-16 flex-shrink-0">
+               <img 
+                 src={img} 
+                 alt="Partner Logo" 
+                 className="h-full w-auto object-contain opacity80 hover:opacity-100 transition-opacity"
+               />
+             </div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );
 };
 
 export default TrustBar;
-

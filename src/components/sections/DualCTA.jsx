@@ -128,12 +128,12 @@ const DualCTA = () => {
                 </div>
 
                 {/* Bottom Trust Line */}
-                <div className="text-center mt-12 text-gray-600">
+                {/* <div className="text-center mt-12 text-gray-600">
                     <p className="text-lg">
                         Already protecting <span className="font-bold text-gray-900">1,600+ users</span> with{' '}
                         <span className="font-bold text-gray-900">45,000+ content videos</span> blocked monthly.
                     </p>
-                </div>
+                </div> */}
             </div>
         </section>
     );
