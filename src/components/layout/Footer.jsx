@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Mail, Twitter, Linkedin, Facebook, Instagram } from 'lucide-react';
+import { Shield, Mail, Twitter, Linkedin, Facebook, Instagram, MapPin, Phone } from 'lucide-react';
 
 const Footer = () => {
   const footerLinks = {
@@ -41,6 +41,19 @@ const Footer = () => {
               Protecting women and girls from digital violence through real-time
               AI-powered content filtering. Building a safer internet for everyone.
             </p>
+            <div className="space-y-3 mb-6">
+              <div className="flex items-start gap-3 text-gray-400">
+                <MapPin className="w-5 h-5 shrink-0 mt-0.5" />
+                <span className="text-sm">
+                  1680 East Barstow Avenue,<br />
+                  Fresno California, United States
+                </span>
+              </div>
+              <div className="flex items-center gap-3 text-gray-400">
+                <Phone className="w-5 h-5 shrink-0" />
+                <span className="text-sm">+1(559)6683783</span>
+              </div>
+            </div>
             {/* <div className="flex items-center gap-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter className="w-5 h-5" />
