@@ -24,20 +24,34 @@ const Testimonials = () => {
       gradient: 'from-purple-500 to-indigo-500',
       image: '/media/testimonial_mwanret.jpg'
     },
+    // {
+    //   name: 'Limona Esther',
+    //   age: '14 Years',
+    //   quote: "I didn’t know I needed Saife AI until I tried it. It removed over 40 toxic and violent videos from my feed in just one week. I didn’t even realize how much it was affecting my mood before",
+    //   gradient: 'from-blue-400 to-cyan-400',
+    //   image: '/media/testimonial_esther.jpg'
+    // },
     {
-      name: 'Limona Esther',
-      age: '14 Years',
+      name: 'Fiona Shelby',
+      age: '22 Years',
       quote: "I didn’t know I needed Saife AI until I tried it. It removed over 40 toxic and violent videos from my feed in just one week. I didn’t even realize how much it was affecting my mood before",
       gradient: 'from-blue-400 to-cyan-400',
-      image: '/media/testimonial_esther.jpg'
+      image: '/media/testimonial_fiona.jpg'
     },
     {
-      name: 'Anna Uduaghan',
-      age: '27 Years',
+      name: 'Karen White',
+      age: '20 Years',
       quote: "I was scared for my younger sister because she’s always scrolling reels. Saife AI now blocks dangerous challenges and harmful trends from her feed. The app is doing God’s work",
       gradient: 'from-teal-400 to-emerald-400',
-      image: '/media/testimonial_anna.jpg'
+      image: '/media/testimonial_karen.jpg'
     },
+    // {
+    //   name: 'Anna Uduaghan',
+    //   age: '27 Years',
+    //   quote: "I was scared for my younger sister because she’s always scrolling reels. Saife AI now blocks dangerous challenges and harmful trends from her feed. The app is doing God’s work",
+    //   gradient: 'from-teal-400 to-emerald-400',
+    //   image: '/media/testimonial_anna.jpg'
+    // },
     {
       name: 'Eleazer Eneriene',
       age: '21 Years',
@@ -66,18 +80,32 @@ const Testimonials = () => {
       image: '/media/testimonial_tomilola.JPG'
     },
     {
-      name: 'Pam Simi',
-      age: '28 Years',
+      name: 'Sabrina Collier',
+      age: '21 Years',
       quote: "Me I love how Saife AI skips harmful content automatically when I’m scrolling. Especially those violent videos that just pop up anyhow. Now my younger sister and I can use my phone without fear.",
       gradient: 'from-green-500 to-emerald-500',
-      image: '/media/testimonial_simi.jpg'
+      image: '/media/testimonial_sabrina.jpg'
     },
+    // {
+    //   name: 'Pam Simi',
+    //   age: '28 Years',
+    //   quote: "Me I love how Saife AI skips harmful content automatically when I’m scrolling. Especially those violent videos that just pop up anyhow. Now my younger sister and I can use my phone without fear.",
+    //   gradient: 'from-green-500 to-emerald-500',
+    //   image: '/media/testimonial_simi.jpg'
+    // },
+    // {
+    //   name: 'Sadatu Aminu',
+    //   age: '11 Years',
+    //   quote: "My mum downloaded Saife AI for me because of the things going around WhatsApp and Facebook. I didn’t like the idea at first, but now I actually feel safer. It filters dangerous messages before I see them. 😘",
+    //   gradient: 'from-blue-500 to-indigo-600',
+    //   image: '/media/testimonial_sadatu.jpg'
+    // },
     {
-      name: 'Sadatu Aminu',
-      age: '11 Years',
+      name: 'Tiffany Taurasi',
+      age: '23 Years',
       quote: "My mum downloaded Saife AI for me because of the things going around WhatsApp and Facebook. I didn’t like the idea at first, but now I actually feel safer. It filters dangerous messages before I see them. 😘",
       gradient: 'from-blue-500 to-indigo-600',
-      image: '/media/testimonial_sadatu.jpg'
+      image: '/media/testimonial_tiffany.jpg'
     },
     {
       name: 'Florence Idah',
