@@ -60,7 +60,7 @@ const Hero = () => {
                                 <Button
                                     variant="primary"
                                     className="justify-center flex-1 sm:flex-none bg-sky-600 hover:bg-sky-700"
-                                    href="#"
+                                    href="https://apps.apple.com/app/girlified/id6759611833"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
