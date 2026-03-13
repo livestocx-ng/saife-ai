@@ -11,7 +11,7 @@ const Roadmap = () => {
             color: 'primary',
             milestones: [
                 'Regional language dataset expansion (Hausa, Swahili, Hindi)',
-                'Violence spectrum detection accuracy >92%',
+                'Harmful content detection accuracy >92%',
                 'Enhanced mobile optimization for low-connectivity regions',
             ],
         },
@@ -23,7 +23,7 @@ const Roadmap = () => {
             color: 'secondary',
             milestones: [
                 'Deploy to 150+ schools',
-                'Reach 50,000 teen girls through institutional partnerships',
+                'Reach 50,000 youths and teenagers through institutional partnerships',
                 'Launch parent/guardian dashboard features',
                 'Complete 20+ digital safety workshops',
             ],
@@ -140,7 +140,7 @@ const Roadmap = () => {
                             <div className="text-center">
                                 <div className="stat-number mb-2">100K</div>
                                 <div className="text-lg font-semibold text-gray-900">
-                                    Women & Girls Protected
+                                    Youths & Teenagers Protected
                                 </div>
                             </div>
                             <div className="text-center">

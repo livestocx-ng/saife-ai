@@ -9,7 +9,7 @@ const DualCTA = () => {
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-display-md md:text-display-lg mb-6">
-                        Join the Movement to End Digital Violence
+                        Join the Movement for Youth Mental Wellbeing
                     </h2>
                 </div>
 
@@ -33,7 +33,7 @@ const DualCTA = () => {
                                 </h3>
 
                                 <p className="text-xl mb-8 leading-relaxed">
-                                    Download Saife AI for free and join 1,600+ women and girls
+                                    Download Saife AI for free and join 1,600+ youths and teenagers
                                     browsing safely across social media.
                                 </p>
 

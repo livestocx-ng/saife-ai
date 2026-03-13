@@ -18,19 +18,16 @@ const Hero = () => {
                         <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
                             <Shield className="w-4 h-4 text-primary" />
                             <span className="text-sm font-semibold text-primary">
-                                Trusted by 1600+ Users
+                                Trusted by 2300+ Users
                             </span>
                         </div>
 
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
-                            Real-Time Protection from{' '}
-                            <span className="gradient-text">Online Violence.</span>
-                            <br />
-                            Built for Women & Girls.
+                            Real-Time Protection from Harmful <span className="gradient-text">Social Media</span> for Youth Mental Wellbeing.
                         </h1>
 
                         <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
-                            Saife AI automatically detects, filters, and blocks harmful content
+                            SaifeAI automatically detects, filters, and blocks harmful content
                             on social media before you see it.
                         </p>
 

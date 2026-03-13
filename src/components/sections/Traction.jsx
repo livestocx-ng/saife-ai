@@ -26,7 +26,7 @@ const Traction = () => {
         </div>
         
         <SectionHeader
-          headline="Already Protecting Thousands of Women & Girls"
+          headline="Already Protecting Thousands of Youths & Teenagers"
           centered={true}
         />
 

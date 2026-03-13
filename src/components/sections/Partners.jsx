@@ -15,8 +15,8 @@ const Partners = () => {
         <section className="section-padding bg-gray-50" id="partners">
             <div className="container-custom">
                 <SectionHeader
-                    headline="Supported By Leaders in Safety, Technology & Women's Rights"
-                    subheadline="We partner with organizations committed to ending digital violence against women and girls."
+                    headline="Supported By Leaders in Safety, Technology & Youth Wellbeing"
+                    subheadline="We partner with organizations committed to protecting youths and teenagers' mental wellbeing online."
                 />
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">

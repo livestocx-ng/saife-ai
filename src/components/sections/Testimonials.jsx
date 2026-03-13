@@ -119,7 +119,7 @@ const Testimonials = () => {
     {
       name: 'Patience Monday',
       age: '26 Years',
-      quote: "Saife AI helps me protect my space. At first I thought the app would be complicated, but it’s actually very easy. I feel like someone finally built something for girls like us. Social media is stressful enough.",
+      quote: "Saife AI helps me protect my space. At first I thought the app would be complicated, but it’s actually very easy. I feel like someone finally built something for youths like us. Social media is stressful enough.",
       handle: '@ashp221',
       platform: 'TikTok',
       gradient: 'from-cyan-500 to-blue-500',
@@ -128,7 +128,7 @@ const Testimonials = () => {
     {
       name: 'Ritkatmun Lenka',
       age: '20 Years',
-      quote: "I follow a lot of pages for school and entertainment, but some of them post disturbing stuff without warning. With Saife AI, I finally have control over what enters my mind. Every girl needs this app.",
+      quote: "I follow a lot of pages for school and entertainment, but some of them post disturbing stuff without warning. With Saife AI, I finally have control over what enters my mind. Every teenager needs this app.",
       handle: '@ritkatmun',
       platform: 'Instagram',
       gradient: 'from-fuchsia-500 to-pink-500',
@@ -141,7 +141,7 @@ const Testimonials = () => {
       <div className="container-custom mb-12">
         <SectionHeader
           headline="I Finally Feel Safe Online"
-          subheadline="Real stories from women and girls using Saife AI every day."
+          subheadline="Real stories from youths and teenagers using Saife AI every day."
         />
       </div>
 

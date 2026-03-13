@@ -38,7 +38,7 @@ const Footer = () => {
               </span>
             </a>
             <p className="text-gray-400 mb-6 max-w-md">
-              Protecting women and girls from digital violence through real-time
+              Protecting youths and teenagers from harmful content through real-time
               AI-powered content filtering. Building a safer internet for everyone.
             </p>
             <div className="space-y-3 mb-6">
@@ -145,7 +145,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
-            © 2025 Saife AI. Protecting women and girls from digital violence.
+            © 2025 Saife AI. Protecting youths and teenagers' mental wellbeing.
           </p>
           <div className="flex gap-6 text-sm">
             <a href="#privacy" className="text-gray-500 hover:text-white transition-colors">

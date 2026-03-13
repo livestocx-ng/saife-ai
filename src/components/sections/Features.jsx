@@ -61,7 +61,7 @@ const Features = () => {
             <div className="container-custom">
                 <SectionHeader
                     headline="Complete Protection Across Every Platform"
-                    subheadline="Comprehensive features designed specifically for women and girls' safety online."
+                    subheadline="Comprehensive features designed specifically for youths and teenagers' mental wellbeing online."
                 />
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

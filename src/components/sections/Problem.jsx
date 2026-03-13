@@ -21,7 +21,7 @@ const Problem = () => {
         },
         {
             icon: Shield,
-            title: 'Girls Ages 10-24 Most Vulnerable',
+            title: 'Youths & Teenagers Most Vulnerable',
             description: 'Peak exposure years with minimal protection tools designed for them.',
             color: 'text-secondary',
             bgColor: 'bg-secondary/10',
@@ -32,9 +32,9 @@ const Problem = () => {
         <section className="section-padding bg-white" id="problem">
             <div className="container-custom">
                 <SectionHeader
-                    eyebrow="THE DIGITAL VIOLENCE CRISIS"
-                    headline="85% of Women Have Experienced Online Violence. Girls Face It Daily."
-                    subheadline="Every day, millions of women and girls are exposed to violent content, cyberbullying, sexualized harassment, and digital coercion on social media."
+                    eyebrow="THE MENTAL WELLBEING CRISIS"
+                    headline="Youths and Teenagers are Exposed to Harmful Social Media Content Daily."
+                    subheadline="Every day, millions of youths and teenagers are exposed to harmful content, cyberbullying, and toxic environments on social media that affect their mental wellbeing."
                 />
 
                 <div className="max-w-4xl mx-auto text-center mb-16">

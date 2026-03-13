@@ -7,14 +7,14 @@ const WhoWeProtect = () => {
   const targetGroups = [
     {
       icon: Users,
-      title: 'Girls & Young Women (10-24)',
+      title: 'Youths & Teenagers',
       description: 'Peak exposure risk with minimal existing protection tools',
       gradient: 'from-primary to-primary-light',
     },
     {
       icon: Heart,
       title: 'Survivors of Digital Harassment',
-      description: 'Safe browsing environment for those healing from online violence',
+      description: 'Safe browsing environment for those healing from harmful social media content',
       gradient: 'from-danger to-warning',
     },
     {
@@ -36,7 +36,7 @@ const WhoWeProtect = () => {
     <section className="section-padding bg-white">
       <div className="container-custom">
         <SectionHeader
-          headline="Built Specifically for Women & Girls Aged 10–24"
+          headline="Built Specifically for Youths & Teenagers"
           subheadline="We're starting where the need is greatest and growing across Africa and Asia with culturally-adapted protection."
         />
 

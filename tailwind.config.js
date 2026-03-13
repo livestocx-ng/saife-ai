@@ -36,9 +36,9 @@ export default {
                 },
             },
             fontFamily: {
-                sans: ['Philosopher', 'system-ui', 'sans-serif'],
-                display: ['Roboto', 'sans-serif'],
-                mono: ['Philosopher', 'monospace'],
+                sans: ['Poppins', 'system-ui', 'sans-serif'],
+                display: ['Poppins', 'sans-serif'],
+                mono: ['Poppins', 'monospace'],
             },
             fontSize: {
                 'display-lg': ['3.5rem', { lineHeight: '1.2', fontWeight: '700' }],

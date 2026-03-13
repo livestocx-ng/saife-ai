@@ -255,7 +255,7 @@ const Analytics = () => {
                                 <span className="font-semibold">Protection Scale</span>
                             </div>
                             <p className="text-gray-600 text-sm">
-                                Blocking 45,000+ pieces of harmful content monthly, preventing digital violence
+                                Blocking 45,000+ pieces of harmful content monthly, protecting mental wellbeing
                                 before it reaches our users.
                             </p>
                         </div>
@@ -278,7 +278,7 @@ const Analytics = () => {
                         Building a Safer Internet, One User at a Time
                     </h3>
                     <p className="text-xl mb-8 opacity-90">
-                        Join 2,000+ women and girls already protected from online violence
+                        Join 2,000+ youths and teenagers already protecting their mental wellbeing
                     </p>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                         <div>
