@@ -112,7 +112,7 @@ const Testimonials = () => {
                     </p>
                   </div>
 
-                  {testimonial.handle && (
+                  {testimonial.handle.length > 4 && (
                      <div className="pt-4 border-t border-gray-100 mt-auto">
                         <div className="flex text-xs text-gray-500">
                            <span className="font-medium mr-1">Handle:</span> {testimonial.handle} 
