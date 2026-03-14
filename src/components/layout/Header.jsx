@@ -20,7 +20,7 @@ const Header = () => {
     const navItems = [
         { label: 'How It Works', href: '/#how-it-works', isRoute: false },
         { label: 'Impact', href: '/#impact', isRoute: false },
-        { label: 'Analytics', href: '/analytics', isRoute: true },
+        // { label: 'Analytics', href: '/analytics', isRoute: true },
         { label: 'Roadmap', href: '/#roadmap', isRoute: false },
         { label: 'For Partners', href: '/#partners', isRoute: false },
     ];
