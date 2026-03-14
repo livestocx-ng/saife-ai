@@ -1,140 +1,55 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Quote } from 'lucide-react';
 import { motion } from 'framer-motion';
 import SectionHeader from '../ui/SectionHeader';
 import Card from '../ui/Card';
 
+const gradients = [
+  'from-pink-500 to-rose-500',
+  'from-purple-500 to-indigo-500',
+  'from-blue-400 to-cyan-400',
+  'from-teal-400 to-emerald-400',
+  'from-orange-400 to-amber-400',
+  'from-red-400 to-pink-400',
+  'from-violet-500 to-purple-500',
+  'from-green-500 to-emerald-500',
+  'from-blue-500 to-indigo-600',
+  'from-rose-400 to-orange-400',
+  'from-cyan-500 to-blue-500',
+  'from-fuchsia-500 to-pink-500',
+];
+
 const Testimonials = () => {
-  const testimonials = [
-    {
-      name: 'Amaka Lydia',
-      age: '22 Years',
-      quote: "When I first heard of Saife AI, I thought it was just another app. But the day it blocked a really violent video on my feed, I knew it was different. It actually protects me from things that trigger my anxiety.",
-      handle: '@lydiauzo',
-      platform: 'TikTok',
-      gradient: 'from-pink-500 to-rose-500',
-      image: '/media/testimonial_amaka.jpg'
-    },
-    {
-      name: 'Mwanret Gar',
-      age: '21 Years',
-      quote: "I love that Saife AI is Nigerian-made. It understands the type of content we face online here. From ritual videos to fake news to harassment. It filters them automatically for me ❤️❤️",
-      handle: '@mwanret_gar',
-      platform: 'Instagram',
-      gradient: 'from-purple-500 to-indigo-500',
-      image: '/media/testimonial_mwanret.jpg'
-    },
-    // {
-    //   name: 'Limona Esther',
-    //   age: '14 Years',
-    //   quote: "I didn’t know I needed Saife AI until I tried it. It removed over 40 toxic and violent videos from my feed in just one week. I didn’t even realize how much it was affecting my mood before",
-    //   gradient: 'from-blue-400 to-cyan-400',
-    //   image: '/media/testimonial_esther.jpg'
-    // },
-    {
-      name: 'Fiona Shelby',
-      age: '22 Years',
-      quote: "I didn’t know I needed Saife AI until I tried it. It removed over 40 toxic and violent videos from my feed in just one week. I didn’t even realize how much it was affecting my mood before",
-      gradient: 'from-blue-400 to-cyan-400',
-      image: '/media/testimonial_fiona.jpg'
-    },
-    {
-      name: 'Karen White',
-      age: '20 Years',
-      quote: "I was scared for my younger sister because she’s always scrolling reels. Saife AI now blocks dangerous challenges and harmful trends from her feed. The app is doing God’s work",
-      gradient: 'from-teal-400 to-emerald-400',
-      image: '/media/testimonial_karen.jpg'
-    },
-    // {
-    //   name: 'Anna Uduaghan',
-    //   age: '27 Years',
-    //   quote: "I was scared for my younger sister because she’s always scrolling reels. Saife AI now blocks dangerous challenges and harmful trends from her feed. The app is doing God’s work",
-    //   gradient: 'from-teal-400 to-emerald-400',
-    //   image: '/media/testimonial_anna.jpg'
-    // },
-    {
-      name: 'Eleazer Eneriene',
-      age: '21 Years',
-      quote: "Before Saife AI, I didn’t even know how to avoid some of the nonsense people send online. The app now blocks most of the violent and sexual content before I even see it. Honestly, it has given me small peace of mind ❤️🫂.",
-      handle: '@gideon_elle',
-      platform: 'TikTok',
-      gradient: 'from-orange-400 to-amber-400',
-      image: '/media/testimonial_eleazer.JPG'
-    },
-    {
-      name: 'Favour Obi',
-      age: '13 Years',
-      quote: "As a student, I spend plenty time on TikTok and Instagram. Saife AI helps me filter out the disturbing videos. I feel safer and more in control. My mental health improved because I’m not seeing rubbish every day 🥹.",
-      handle: '@big__emily',
-      platform: 'TikTok',
-      gradient: 'from-red-400 to-pink-400',
-      image: '/media/testimonial_favour.jpg'
-    },
-    {
-      name: 'Tomilola Idris',
-      age: '19 Years',
-      quote: "I used to get creepy DMs from strangers. Saife AI now warns me about dangerous profiles and stops their messages. It’s like having a smart big sister looking out for me online.",
-      handle: '@_elsiequin',
-      platform: 'TikTok',
-      gradient: 'from-violet-500 to-purple-500',
-      image: '/media/testimonial_tomilola.JPG'
-    },
-    {
-      name: 'Sabrina Collier',
-      age: '21 Years',
-      quote: "Me I love how Saife AI skips harmful content automatically when I’m scrolling. Especially those violent videos that just pop up anyhow. Now my younger sister and I can use my phone without fear.",
-      gradient: 'from-green-500 to-emerald-500',
-      image: '/media/testimonial_sabrina.jpg'
-    },
-    // {
-    //   name: 'Pam Simi',
-    //   age: '28 Years',
-    //   quote: "Me I love how Saife AI skips harmful content automatically when I’m scrolling. Especially those violent videos that just pop up anyhow. Now my younger sister and I can use my phone without fear.",
-    //   gradient: 'from-green-500 to-emerald-500',
-    //   image: '/media/testimonial_simi.jpg'
-    // },
-    // {
-    //   name: 'Sadatu Aminu',
-    //   age: '11 Years',
-    //   quote: "My mum downloaded Saife AI for me because of the things going around WhatsApp and Facebook. I didn’t like the idea at first, but now I actually feel safer. It filters dangerous messages before I see them. 😘",
-    //   gradient: 'from-blue-500 to-indigo-600',
-    //   image: '/media/testimonial_sadatu.jpg'
-    // },
-    {
-      name: 'Tiffany Taurasi',
-      age: '23 Years',
-      quote: "My mum downloaded Saife AI for me because of the things going around WhatsApp and Facebook. I didn’t like the idea at first, but now I actually feel safer. It filters dangerous messages before I see them. 😘",
-      gradient: 'from-blue-500 to-indigo-600',
-      image: '/media/testimonial_tiffany.jpg'
-    },
-    {
-      name: 'Florence Idah',
-      age: '23 Years',
-      quote: "One of my worst experiences online was seeing shocking videos I didn’t click. Saife AI now filters those things out. It makes me feel more confident going online without anxiety.",
-      handle: '@princess_alethia',
-      platform: 'TikTok',
-      gradient: 'from-rose-400 to-orange-400',
-      image: '/media/testimonial_florence.JPG'
-    },
-    {
-      name: 'Patience Monday',
-      age: '26 Years',
-      quote: "Saife AI helps me protect my space. At first I thought the app would be complicated, but it’s actually very easy. I feel like someone finally built something for youths like us. Social media is stressful enough.",
-      handle: '@ashp221',
-      platform: 'TikTok',
-      gradient: 'from-cyan-500 to-blue-500',
-      image: '/media/testimonial_patience.jpg'
-    },
-    {
-      name: 'Ritkatmun Lenka',
-      age: '20 Years',
-      quote: "I follow a lot of pages for school and entertainment, but some of them post disturbing stuff without warning. With Saife AI, I finally have control over what enters my mind. Every teenager needs this app.",
-      handle: '@ritkatmun',
-      platform: 'Instagram',
-      gradient: 'from-fuchsia-500 to-pink-500',
-      image: '/media/testimonial_rit.JPG'
-    },
-  ];
+  const [testimonials, setTestimonials] = useState([]);
+
+  useEffect(() => {
+    const fetchTestimonials = async () => {
+      try {
+        const response = await fetch('https://infra-girlified.livestocx.xyz/v1/engagement/testimonials/feed');
+        if (response.ok) {
+          const data = await response.json();
+          const formattedData = data.map((item, index) => ({
+            name: item.author,
+            age: item.age,
+            quote: item.testimonial,
+            handle: item.handle,
+            platform: item.platform,
+            image: item.avatarUrl,
+            gradient: gradients[index % gradients.length]
+          }));
+          setTestimonials(formattedData);
+        }
+      } catch (error) {
+        console.error('Error fetching testimonials:', error);
+      }
+    };
+
+    fetchTestimonials();
+  }, []);
+
+  if (testimonials.length === 0) {
+    return null;
+  }
 
   return (
     <section className="section-padding bg-white overflow-hidden">
