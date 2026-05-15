@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Mail, Twitter, Linkedin, Facebook, Instagram, MapPin, Phone } from 'lucide-react';
+import { Shield, Mail, Twitter, Linkedin, Facebook, MapPin, Phone } from 'lucide-react';
 
 const Footer = () => {
   const footerLinks = {
@@ -54,20 +54,54 @@ const Footer = () => {
                 <span className="text-sm">+1(307)2868484</span>
               </div>
             </div>
-            {/* <div className="flex items-center gap-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+            <div className="flex items-center gap-4">
+              <a
+                href="https://x.com/Girlified2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+                title="X (Twitter)"
+              >
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="https://www.linkedin.com/company/girlified/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+                title="LinkedIn"
+              >
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="https://web.facebook.com/girlifiedng"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+                title="Facebook"
+              >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Instagram className="w-5 h-5" />
+              <a
+                href="https://www.tiktok.com/@girlified1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+                title="TikTok"
+              >
+                <svg
+                  className="w-5 h-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+                </svg>
               </a>
-            </div> */}
+            </div>
           </div>
 
           {/* About Column */}
