@@ -1,5 +1,48 @@
+import { useState, useEffect } from 'react';
 import { SkipForward, Eye, Ban, Shield, Brain, Lock, MessageCircle } from 'lucide-react';
 import SectionHeader from '../ui/SectionHeader';
+
+const FeatureCarousel = ({ feature }) => {
+    const images = [feature.image, feature.image2].filter(Boolean);
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        if (images.length <= 1) return;
+        const interval = setInterval(() => {
+            setCurrentIndex((prev) => (prev + 1) % images.length);
+        }, 4500);
+        return () => clearInterval(interval);
+    }, [images.length]);
+
+    return (
+        <div className="aspect-square rounded-xl overflow-hidden relative">
+            {images.map((img, idx) => (
+                <img
+                    key={idx}
+                    src={`/media/${img}`}
+                    alt={`${feature.title} ${idx + 1}`}
+                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                        idx === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
+                    }`}
+                />
+            ))}
+            {images.length > 1 && (
+                <div className="absolute bottom-4 left-0 right-0 z-20 flex justify-center gap-2">
+                    {images.map((_, idx) => (
+                        <button
+                            key={idx}
+                            onClick={() => setCurrentIndex(idx)}
+                            className={`w-2.5 h-2.5 rounded-full transition-colors duration-300 shadow-sm ${
+                                idx === currentIndex ? 'bg-primary' : 'bg-white/70 hover:bg-white'
+                            }`}
+                            aria-label={`Go to slide ${idx + 1}`}
+                        />
+                    ))}
+                </div>
+            )}
+        </div>
+    );
+};
 
 const Solution = () => {
     const features = [
@@ -22,7 +65,8 @@ const Solution = () => {
             description: 'Saife AI detects and hides misogynistic, abusive, or harassing comments as they appear. No more scrolling through hate. No more psychological toll from anonymous bullying.',
             icon: Ban,
             gradient: 'from-primary to-primary-light',
-            image: 'saife_ai4.jpg',
+            image: 'saife_ai5.jpg',
+            image2: 'saife_ai6.jpg',
         },
     ];
 
@@ -70,13 +114,7 @@ const Solution = () => {
                                 {/* Visual Mockup */}
                                 <div className={`relative ${isReversed ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
                                     <div className="relative bg-white rounded-2xl shadow-strong p-4 md:p-8">
-                                        <div className="aspect-square rounded-xl overflow-hidden">
-                                            <img
-                                                src={`/media/${feature.image}`}
-                                                alt={feature.title}
-                                                className="w-full h-full object-cover"
-                                            />
-                                        </div>
+                                        <FeatureCarousel feature={feature} />
                                     </div>
                                     {/* Decorative Gradient */}
                                     <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-10 blur-3xl -z-10`} />

@@ -9,6 +9,10 @@ const TrustBar = () => {
     '/media/sponsor_4.png',
     '/media/sponsor_5.jpg',
     '/media/sponsor_6.png',
+    '/media/sponsor_7.png',
+    '/media/sponsor_8.png',
+    '/media/sponsor_9.png',
+    '/media/sponsor_10.png',
   ];
 
   return (
