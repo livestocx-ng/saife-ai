@@ -8,6 +8,7 @@ import WhoWeProtect from '../components/sections/WhoWeProtect';
 import Roadmap from '../components/sections/Roadmap';
 import Testimonials from '../components/sections/Testimonials';
 import Partners from '../components/sections/Partners';
+import Pricing from '../components/sections/Pricing';
 import DualCTA from '../components/sections/DualCTA';
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
             {/* <WhoWeProtect /> */}
             {/* <Roadmap /> */}
             <Partners />
+            <Pricing />
             <DualCTA />
         </>
     );

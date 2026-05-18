@@ -18,9 +18,9 @@ const Hero = () => {
                         <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
                             <Shield className="w-4 h-4 text-primary" />
                             <span className="text-sm font-semibold text-primary">
-                                Trusted by 2300+ Users
+                                Trusted by 7000+ Users
                             </span>
-                        </div>
+                        </div>1
 
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
                             Real-Time Protection from Harmful <span className="gradient-text">Social Media</span> for Youth Mental Wellbeing.

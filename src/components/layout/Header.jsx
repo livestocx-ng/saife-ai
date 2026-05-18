@@ -21,6 +21,7 @@ const Header = () => {
         { label: 'How It Works', href: '/#how-it-works', isRoute: false },
         { label: 'Impact', href: '/#impact', isRoute: false },
         // { label: 'Analytics', href: '/analytics', isRoute: true },
+        { label: 'Pricing', href: '/#pricing', isRoute: false },
         { label: 'Roadmap', href: '/#roadmap', isRoute: false },
         { label: 'For Partners', href: '/#partners', isRoute: false },
     ];
@@ -40,7 +41,7 @@ const Header = () => {
                             <Shield className="w-4 h-4 md:w-6 md:h-6 text-white" />
                         </div>
                         <span className="text-xl md:text-2xl font-display font-bold text-gray-900">
-                            Saife <span className="gradient-text">AI</span>
+                            Saife<span className="gradient-text">AI</span>
                         </span>
                     </Link>
 
