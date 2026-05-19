@@ -4,72 +4,72 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Shield } from 'lucide-react';
 
 const Header = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const location = useLocation();
+	const [isScrolled, setIsScrolled] = useState(false);
+	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+	const location = useLocation();
 
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
-        };
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsScrolled(window.scrollY > 50);
+		};
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
 
-    const navItems = [
-        { label: 'How It Works', href: '/#how-it-works', isRoute: false },
-        { label: 'Impact', href: '/#impact', isRoute: false },
-        // { label: 'Analytics', href: '/analytics', isRoute: true },
-        { label: 'Pricing', href: '/#pricing', isRoute: false },
-        { label: 'Roadmap', href: '/#roadmap', isRoute: false },
-        { label: 'For Partners', href: '/#partners', isRoute: false },
-    ];
+	const navItems = [
+		{ label: 'How It Works', href: '/#how-it-works', isRoute: false },
+		{ label: 'Impact', href: '/#impact', isRoute: false },
+		// { label: 'Analytics', href: '/analytics', isRoute: true },
+		{ label: 'Pricing', href: '/#pricing', isRoute: false },
+		{ label: 'Testimonials', href: '/#testimonials', isRoute: false },
+		{ label: 'For Partners', href: '/#partners', isRoute: false },
+	];
 
-    return (
-        <header
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-display ${isScrolled
-                ? 'bg-white shadow-medium py-3'
-                : 'bg-transparent py-5'
-                }`}
-        >
-            <div className="container-custom">
-                <div className="flex items-center justify-between">
-                    {/* Logo */}
-                    <Link to="/" className="flex items-center gap-2 group">
-                        <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <Shield className="w-4 h-4 md:w-6 md:h-6 text-white" />
-                        </div>
-                        <span className="text-xl md:text-2xl font-display font-bold text-gray-900">
-                            Saife<span className="gradient-text">AI</span>
-                        </span>
-                    </Link>
+	return (
+		<header
+			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-display ${isScrolled
+				? 'bg-white shadow-medium py-3'
+				: 'bg-transparent py-5'
+				}`}
+		>
+			<div className="container-custom">
+				<div className="flex items-center justify-between">
+					{/* Logo */}
+					<Link to="/" className="flex items-center gap-2 group">
+						<div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+							<Shield className="w-4 h-4 md:w-6 md:h-6 text-white" />
+						</div>
+						<span className="text-xl md:text-2xl font-display font-bold text-gray-900">
+							Saife<span className="gradient-text">AI</span>
+						</span>
+					</Link>
 
-                    {/* Desktop Navigation */}
-                    <nav className="hidden lg:flex items-center gap-8">
-                        {navItems.map((item) => (
-                            item.isRoute ? (
-                                <Link
-                                    key={item.label}
-                                    to={item.href}
-                                    className="text-gray-700 hover:text-primary font-medium transition-colors"
-                                >
-                                    {item.label}
-                                </Link>
-                            ) : (
-                                <a
-                                    key={item.label}
-                                    href={item.href}
-                                    className="text-gray-700 hover:text-primary font-medium transition-colors"
-                                >
-                                    {item.label}
-                                </a>
-                            )
-                        ))}
-                    </nav>
+					{/* Desktop Navigation */}
+					<nav className="hidden lg:flex items-center gap-8">
+						{navItems.map((item) => (
+							item.isRoute ? (
+								<Link
+									key={item.label}
+									to={item.href}
+									className="text-gray-700 hover:text-primary font-medium transition-colors"
+								>
+									{item.label}
+								</Link>
+							) : (
+								<a
+									key={item.label}
+									href={item.href}
+									className="text-gray-700 hover:text-primary font-medium transition-colors"
+								>
+									{item.label}
+								</a>
+							)
+						))}
+					</nav>
 
-                    {/* Desktop CTAs */}
-                    {/* <div className="hidden lg:flex items-center gap-4">
+					{/* Desktop CTAs */}
+					{/* <div className="hidden lg:flex items-center gap-4">
                         <Button variant="secondary" icon="arrow" href="#support" className="h-6 px-4 text-sm    "    >
                             Support Us
                         </Button>
@@ -85,46 +85,46 @@ const Header = () => {
                         </Button>
                     </div> */}
 
-                    {/* Mobile Menu Button */}
-                    <button
-                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        className="lg:hidden p-2 text-gray-900"
-                    >
-                        {isMobileMenuOpen ? (
-                            <X className="w-6 h-6" />
-                        ) : (
-                            <Menu className="w-6 h-6" />
-                        )}
-                    </button>
-                </div>
+					{/* Mobile Menu Button */}
+					<button
+						onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+						className="lg:hidden p-2 text-gray-900"
+					>
+						{isMobileMenuOpen ? (
+							<X className="w-6 h-6" />
+						) : (
+							<Menu className="w-6 h-6" />
+						)}
+					</button>
+				</div>
 
-                {/* Mobile Menu */}
-                {isMobileMenuOpen && (
-                    <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-strong mt-2 py-6 px-4 rounded-lg mx-4 animate-fade-in">
-                        <nav className="flex flex-col gap-4 mb-6">
-                            {navItems.map((item) => (
-                                item.isRoute ? (
-                                    <Link
-                                        key={item.label}
-                                        to={item.href}
-                                        onClick={() => setIsMobileMenuOpen(false)}
-                                        className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
-                                    >
-                                        {item.label}
-                                    </Link>
-                                ) : (
-                                    <a
-                                        key={item.label}
-                                        href={item.href}
-                                        onClick={() => setIsMobileMenuOpen(false)}
-                                        className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
-                                    >
-                                        {item.label}
-                                    </a>
-                                )
-                            ))}
-                        </nav>
-                        {/* <div className="flex flex-col gap-3">
+				{/* Mobile Menu */}
+				{isMobileMenuOpen && (
+					<div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-strong mt-2 py-6 px-4 rounded-lg mx-4 animate-fade-in">
+						<nav className="flex flex-col gap-4 mb-6">
+							{navItems.map((item) => (
+								item.isRoute ? (
+									<Link
+										key={item.label}
+										to={item.href}
+										onClick={() => setIsMobileMenuOpen(false)}
+										className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
+									>
+										{item.label}
+									</Link>
+								) : (
+									<a
+										key={item.label}
+										href={item.href}
+										onClick={() => setIsMobileMenuOpen(false)}
+										className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
+									>
+										{item.label}
+									</a>
+								)
+							))}
+						</nav>
+						{/* <div className="flex flex-col gap-3">
                             <Button 
                                 variant="primary" 
                                 icon="download" 
@@ -139,11 +139,11 @@ const Header = () => {
                                 Support Us
                             </Button>
                         </div> */}
-                    </div>
-                )}
-            </div>
-        </header>
-    );
+					</div>
+				)}
+			</div>
+		</header>
+	);
 };
 
 export default Header;
