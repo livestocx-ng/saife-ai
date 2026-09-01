@@ -24,16 +24,16 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-cream-deep text-gray-300">
       <div className="container-custom py-16 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <a href="#" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
                 <Shield className="w-6 h-6 text-white" />
               </div>
-              <span className="text-2xl font-display font-bold text-white">
+              <span className="text-3xl font-serif italic font-bold text-white">
                 Saife AI
               </span>
             </a>
@@ -56,7 +56,7 @@ const Footer = () => {
                 </div>
               </div>
               
-              <div className="space-y-2 border-t border-gray-800 pt-3">
+              <div className="space-y-2 border-t border-white/10 pt-3">
                 <div className="flex items-start gap-3 text-gray-400">
                   <MapPin className="w-5 h-5 shrink-0 mt-0.5" />
                   <span className="text-sm">
@@ -184,16 +184,16 @@ const Footer = () => {
         </div>
 
         {/* Newsletter */}
-        <div className="border-t border-gray-800 pt-8 mb-8">
+        <div className="border-t border-white/10 pt-8 mb-8">
           <div className="max-w-2xl">
             <h4 className="text-white font-semibold text-lg mb-4">Stay Updated</h4>
             <div className="flex gap-3">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-secondary"
+                className="flex-1 px-4 py-3 bg-white/5 border border-white/10 rounded-full text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
               />
-              <button className="px-6 py-3 bg-secondary hover:bg-secondary-dark text-white font-semibold rounded-lg transition-colors flex items-center gap-2">
+              <button className="px-6 py-3 bg-gradient-to-r from-primary to-secondary hover:shadow-strong text-white font-semibold rounded-full transition-all flex items-center gap-2">
                 <Mail className="w-5 h-5" />
                 Subscribe
               </button>
@@ -202,7 +202,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
             © 2025 Saife AI. Protecting youths and teenagers' mental wellbeing.
           </p>

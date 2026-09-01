@@ -12,7 +12,7 @@ const Partners = () => {
     ];
 
     return (
-        <section className="section-padding bg-gray-50" id="partners">
+        <section className="section-padding bg-cream-dark" id="partners">
             <div className="container-custom">
                 <SectionHeader
                     headline="Supported By Leaders in Safety, Technology & Youth Wellbeing"
@@ -25,7 +25,7 @@ const Partners = () => {
                         return (
                             <div
                                 key={index}
-                                className="bg-white rounded-xl p-6 shadow-soft hover:shadow-medium transition-all text-center"
+                                className="bg-cream-card rounded-xl p-6 shadow-soft hover:shadow-medium transition-all text-center"
                             >
                                 <div className="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
                                     <Icon className="w-7 h-7 text-secondary" />

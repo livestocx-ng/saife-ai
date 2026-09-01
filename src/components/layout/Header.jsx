@@ -29,7 +29,7 @@ const Header = () => {
 	return (
 		<header
 			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-display ${isScrolled
-				? 'bg-white shadow-medium py-3'
+				? 'bg-cream/90 backdrop-blur-md shadow-medium py-3'
 				: 'bg-transparent py-5'
 				}`}
 		>
@@ -37,11 +37,11 @@ const Header = () => {
 				<div className="flex items-center justify-between">
 					{/* Logo */}
 					<Link to="/" className="flex items-center gap-2 group">
-						<div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+						<div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
 							<Shield className="w-4 h-4 md:w-6 md:h-6 text-white" />
 						</div>
-						<span className="text-xl md:text-2xl font-display font-bold text-gray-900">
-							Saife<span className="gradient-text">AI</span>
+						<span className="text-2xl md:text-3xl font-serif italic font-bold text-gray-900">
+							Saife<span className="gradient-text not-italic">AI</span>
 						</span>
 					</Link>
 
@@ -69,6 +69,18 @@ const Header = () => {
 					</nav>
 
 					{/* Desktop CTAs */}
+					<div className="hidden lg:flex items-center">
+						<a
+							href="https://play.google.com/store/apps/details?id=com.girlified.girlified"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="bg-gradient-to-r from-primary to-secondary text-white font-semibold px-6 py-2.5 rounded-full text-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-strong"
+						>
+							Get the App
+						</a>
+					</div>
+
+					{/* Desktop CTAs (legacy) */}
 					{/* <div className="hidden lg:flex items-center gap-4">
                         <Button variant="secondary" icon="arrow" href="#support" className="h-6 px-4 text-sm    "    >
                             Support Us

@@ -78,7 +78,7 @@ const Solution = () => {
     ];
 
     return (
-        <section className="section-padding bg-gray-50" id="how-it-works">
+        <section className="section-padding bg-cream" id="how-it-works">
             <div className="container-custom">
                 <SectionHeader
                     eyebrow="HOW SAIFE AI WORKS"
@@ -113,7 +113,7 @@ const Solution = () => {
 
                                 {/* Visual Mockup */}
                                 <div className={`relative ${isReversed ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-                                    <div className="relative bg-white rounded-2xl shadow-strong p-4 md:p-8">
+                                    <div className="relative bg-cream-card rounded-2xl shadow-strong p-4 md:p-8">
                                         <FeatureCarousel feature={feature} />
                                     </div>
                                     {/* Decorative Gradient */}

@@ -4,7 +4,7 @@ import Button from '../ui/Button';
 
 const DualCTA = () => {
     return (
-        <section className="section-padding bg-white" id="support">
+        <section className="section-padding bg-cream" id="support">
             <div className="container-custom">
                 {/* Section Header */}
                 <div className="text-center mb-16">

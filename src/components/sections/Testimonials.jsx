@@ -52,7 +52,7 @@ const Testimonials = () => {
   }
 
   return (
-    <section id='testimonials' className="section-padding bg-white overflow-hidden">
+    <section id='testimonials' className="section-padding bg-cream overflow-hidden">
       <div className="container-custom mb-12">
         <SectionHeader
           headline="I Finally Feel Safe Online"

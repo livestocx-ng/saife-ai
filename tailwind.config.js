@@ -8,37 +8,44 @@ export default {
         extend: {
             colors: {
                 primary: {
-                    DEFAULT: '#EC4899',
-                    light: '#F9A8D4',
-                    dark: '#BE185D',
+                    DEFAULT: '#FF007F',
+                    light: '#FF5CA8',
+                    dark: '#C60063',
                 },
                 secondary: {
-                    DEFAULT: '#A855F7',
-                    light: '#C084FC',
-                    dark: '#7C3AED',
+                    DEFAULT: '#F0518E',
+                    light: '#F98FB6',
+                    dark: '#B93068',
                 },
                 tertiary: {
-                    DEFAULT: '#14B8A6',
-                    light: '#2DD4BF',
-                    dark: '#0F766E',
+                    DEFAULT: '#D98324',
+                    light: '#E9A85A',
+                    dark: '#A6631A',
                 },
                 success: {
-                    DEFAULT: '#10B981',
-                    light: '#34D399',
+                    DEFAULT: '#4E9F3D',
+                    light: '#7BC96F',
                 },
                 warning: {
-                    DEFAULT: '#F59E0B',
-                    light: '#FBBF24',
+                    DEFAULT: '#E0A100',
+                    light: '#F5C542',
                 },
                 danger: {
                     DEFAULT: '#EF4444',
                     light: '#F87171',
                 },
+                cream: {
+                    DEFAULT: '#FBF6EE',
+                    card: '#FCF3EA',
+                    dark: '#F3E8DA',
+                    deep: '#1F1A17',
+                },
             },
             fontFamily: {
-                sans: ['Poppins', 'system-ui', 'sans-serif'],
-                display: ['Poppins', 'sans-serif'],
-                mono: ['Poppins', 'monospace'],
+                sans: ['Inter', 'system-ui', 'sans-serif'],
+                display: ['Outfit', 'system-ui', 'sans-serif'],
+                serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                mono: ['Inter', 'monospace'],
             },
             fontSize: {
                 'display-lg': ['3.5rem', { lineHeight: '1.2', fontWeight: '700' }],

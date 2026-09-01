@@ -17,7 +17,7 @@ const Traction = () => {
   ];
 
   return (
-    <section className="section-padding bg-gray-900 text-white" id="impact">
+    <section className="section-padding bg-cream-deep text-white" id="impact">
       <div className="container-custom">
         <div className="text-center mb-6">
           <div className="eyebrow !text-tertiary">
@@ -50,7 +50,7 @@ const Traction = () => {
             return (
               <div 
                 key={index} 
-                className="flex items-center gap-3 bg-gray-800/50 px-6 py-4 rounded-full"
+                className="flex items-center gap-3 bg-white/5 px-6 py-4 rounded-full"
               >
                 <div className="w-8 h-8 bg-tertiary/20 rounded-full flex items-center justify-center">
                   <Icon className="w-4 h-4 text-tertiary" />

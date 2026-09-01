@@ -16,7 +16,7 @@ const TrustBar = () => {
   ];
 
   return (
-    <section className="py-12 bg-gray-50 border-y border-gray-200 overflow-hidden">
+    <section className="py-12 bg-cream-dark border-y border-black/5 overflow-hidden">
       <div className="container-custom mb-8">
         <div className="text-center">
           <h3 className="text-sm font-bold tracking-wider uppercase text-gray500">

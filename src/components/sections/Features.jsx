@@ -57,7 +57,7 @@ const Features = () => {
     ];
 
     return (
-        <section className="section-padding bg-white">
+        <section className="section-padding bg-cream-dark">
             <div className="container-custom">
                 <SectionHeader
                     headline="Complete Protection Across Every Platform"

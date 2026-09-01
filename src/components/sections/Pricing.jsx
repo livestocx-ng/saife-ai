@@ -65,7 +65,7 @@ const Pricing = () => {
     ];
 
     return (
-        <section id="pricing" className="py-20 bg-gray-900 text-white font-sans">
+        <section id="pricing" className="py-20 bg-cream-deep text-white font-sans">
             <div className="container-custom">
                 <div className="text-center mb-16 max-w-3xl mx-auto">
                     <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display">
@@ -80,7 +80,7 @@ const Pricing = () => {
                     {plans.map((plan) => (
                         <div 
                             key={plan.name} 
-                            className="flex-1 min-w-[300px] max-w-md bg-gray-800 rounded-2xl p-6 flex flex-col h-full hover:bg-gray-750 transition-colors border border-gray-700 hover:border-gray-600 shadow-lg"
+                            className="flex-1 min-w-[300px] max-w-md bg-white/5 rounded-2xl p-6 flex flex-col h-full hover:bg-white/10 transition-colors border border-white/10 hover:border-white/20 shadow-lg"
                         >
                             {plan.badge ? (
                                 <div className={`inline-block px-3 py-1 rounded-md text-sm font-bold mb-4 w-max ${plan.badgeColor}`}>
