@@ -24,7 +24,7 @@ const Home = () => {
             {/* <WhoWeProtect /> */}
             {/* <Roadmap /> */}
             <Partners />
-            <Pricing />
+            {/* <Pricing /> */}
             <DualCTA />
         </>
     );
