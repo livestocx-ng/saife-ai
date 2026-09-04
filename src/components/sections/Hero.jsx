@@ -127,10 +127,10 @@ const Hero = () => {
                                 </div>
 
                                 {/* Floating Stats */}
-                                <div className="absolute -top-4 -right-4 bg-white rounded-2xl shadow-strong p-4 animate-scale-in">
+                                {/* <div className="absolute -top-4 -right-4 bg-white rounded-2xl shadow-strong p-4 animate-scale-in">
                                     <div className="text-2xl font-bold gradient-text">45K+</div>
                                     <div className="text-xs text-gray-600">Monthly Blocks</div>
-                                </div>
+                                </div> */}
 
                                 <div className="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-strong p-4 animate-scale-in" style={{ animationDelay: '200ms' }}>
                                     <div className="text-2xl font-bold gradient-text">4.6★</div>

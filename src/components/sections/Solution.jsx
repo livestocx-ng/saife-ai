@@ -66,7 +66,7 @@ const Solution = () => {
             icon: Ban,
             gradient: 'from-primary to-primary-light',
             image: 'saife_ai5.jpg',
-            image2: 'saife_ai6.jpg',
+            image2: 'saife_ai66.jpg',
         },
     ];
 
