@@ -42,7 +42,7 @@ const Footer = () => {
               AI-powered content filtering. Building a safer internet for everyone.
             </p>
             <div className="space-y-4 mb-6">
-              <div className="space-y-2">
+              {/* <div className="space-y-2">
                 <div className="flex items-start gap-3 text-gray-400">
                   <MapPin className="w-5 h-5 shrink-0 mt-0.5" />
                   <span className="text-sm">
@@ -54,7 +54,7 @@ const Footer = () => {
                   <Phone className="w-5 h-5 shrink-0" />
                   <span className="text-sm">+1(307)2868484</span>
                 </div>
-              </div>
+              </div> */}
               
               <div className="space-y-2 border-t border-white/10 pt-3">
                 <div className="flex items-start gap-3 text-gray-400">
