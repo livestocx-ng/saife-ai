@@ -15,12 +15,12 @@ const Hero = () => {
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Text Content */}
                     <div className="space-y-8 animate-slide-up">
-                        <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
+                        {/* <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
                             <Shield className="w-4 h-4 text-primary" />
                             <span className="text-sm font-semibold text-primary">
                                 Trusted by 7000+ Users
                             </span>
-                        </div>
+                        </div> */}
 
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-extrabold leading-tight">
                             Real-Time Protection from Harmful <span className="gradient-text">Social Media</span> for Youth Mental Wellbeing.
