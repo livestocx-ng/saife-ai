@@ -1,12 +1,34 @@
 import Button from '../ui/Button';
-import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useState, useEffect, useCallback } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, Shield } from 'lucide-react';
 
 const Header = () => {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 	const location = useLocation();
+	const navigate = useNavigate();
+
+	const scrollToHash = useCallback((hash) => {
+		const id = hash.replace(/^#/, '');
+		if (!id) return;
+
+		const scroll = () => {
+			const el = document.getElementById(id);
+			if (!el) return false;
+			el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			return true;
+		};
+
+		if (scroll()) return;
+
+		// Section may still be mounting (e.g. async content) — retry briefly
+		let attempts = 0;
+		const interval = setInterval(() => {
+			attempts += 1;
+			if (scroll() || attempts >= 20) clearInterval(interval);
+		}, 100);
+	}, []);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -16,6 +38,31 @@ const Header = () => {
 		window.addEventListener('scroll', handleScroll);
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
+
+	// Scroll when landing on / with a hash (e.g. from another page or refresh)
+	useEffect(() => {
+		if (location.pathname === '/' && location.hash) {
+			scrollToHash(location.hash);
+		}
+	}, [location.pathname, location.hash, scrollToHash]);
+
+	const handleHashClick = (event, href) => {
+		const hashIndex = href.indexOf('#');
+		if (hashIndex === -1) return;
+
+		const hash = href.slice(hashIndex);
+		event.preventDefault();
+		setIsMobileMenuOpen(false);
+
+		if (location.pathname !== '/') {
+			navigate(`/${hash}`);
+			return;
+		}
+
+		// Update the URL hash and scroll
+		window.history.pushState(null, '', hash);
+		scrollToHash(hash);
+	};
 
 	const navItems = [
 		{ label: 'How It Works', href: '/#how-it-works', isRoute: false },
@@ -60,6 +107,7 @@ const Header = () => {
 								<a
 									key={item.label}
 									href={item.href}
+									onClick={(event) => handleHashClick(event, item.href)}
 									className="text-gray-700 hover:text-primary font-medium transition-colors"
 								>
 									{item.label}
@@ -128,7 +176,7 @@ const Header = () => {
 									<a
 										key={item.label}
 										href={item.href}
-										onClick={() => setIsMobileMenuOpen(false)}
+										onClick={(event) => handleHashClick(event, item.href)}
 										className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
 									>
 										{item.label}
